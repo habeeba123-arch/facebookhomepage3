@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .maindiv{
+            border: 1px solid rgb(179, 225, 240);
+            background-color: rgb(140, 186, 203);
+            
+        }
+        .head{
+           display: flex;
+            background-color: rgb(73, 73, 194);
+            width: 6000px;
+            height: 120px;
+            color: white;
+            text-size-adjust: 10px;
+            border: 1px solid black;
+           
+   
+  
+          
+        }
+        .head h1{
+            padding-left:200px;
+            padding-bottom: 50px;
+        }
+        .content1{
+
+             
+          padding-bottom: 200px;
+            padding-left: 600px;
+        }
+    .part2{                               
+
+
+        display:flex;
+   height: 500px;
+   background-color: chartreuse;
+
+    
+    
+    
+    width: 100%;
+    
+        }
+   .img1{
+    width: 100%;
+    height: 550px;
+    margin-left: 40px;
+   }
+       
+    .part3{
+        
+        background-color:rgb(211, 220, 233);
+     height: 500px;
+    width: 100%;
+    
+
+       
+    }
+    .overalldata{
+        background-color: rgb(194, 213, 224);
+    width: 100%;
+    display: flex;
+   
+    
+   
+
+}
+.rightdata{
+    width: 40%;
+    display: flex;
+    
+   
+}
+.leftdata{
+    width: 60%;
+    display: flex;
+    
+}
+.part4{
+    width: 50%;
+    
+
+}
+       
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="head"><br><br>
+            <h1 style="font-size: 50px;">facebook</h1>
+            <div class="content1"><br><br>
+                <div>
+                <form id="myform" onsubmit ="return verifyPassword()"  >
+                    <form id = "basic-form" action="" method="post"> 
+                 
+                    <label for="email"> Email <span> </span> </label> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            
+              
+            <label for="password">Password</label><br>
+            <input id="email" type="email" name="email" required >&emsp;
+           
+            <!-- <form onsubmit ="return verifyPassword()"> -->
+            <input type = "password" id = "pswd" value = "">   
+            <span id = "message" style="color:red"> </span>&emsp;
+            <input type="submit" value="login">
+            </form></form>
+           
+             <h5 style="color:rgb(123, 196, 222);">forgotten account?</h5>
+          
+            </div></div></div>
+            <div class="overalldata">
+                <div class="leftdata">
+                    <div class="box1">
+                
+                
+                <img src="Network.png" class="img1"/>
+                </div></div>
+                
+                <div class="rightdata">
+                    <div class="part4">
+                        <div class="box2">
+                        <h1>create your account</h1>
+                        <h4>its quick and easy</h4>
+                        <form id="myform1">
+                           
+                            <label for= "name">  <span>  </span> </label>  
+                            <input id="name" name="name" minlength="8" type="text" required placeholder="Firstname"> 
+                            <!-- <input type="text" class="left" id="field" name="field" placeholder="Firstname"> -->
+                            <br><br>
+                            <label for = "name">  <span> </span> </label>  
+                            <input type = "text" id="name" name="name" minlength="8" required required placeholder="Lastname"  >  
+                            <!-- <label for="field"> </label>
+                            <input type="text" class="left" id="field" name="field"  placeholder="Lastname"> -->
+                            </form><br><br>
+                            <form id = "basic-form" action="" method="post"> 
+                                <label for="email"> <span> </span> </label>  
+                               <input id="email" type="email" name="email" required placeholder="mobile number or email address">
+                                 
+                               
+                            </form>
+                       <br><br>
+                       <form  id="myform6" onsubmit ="return verifyPassword()">
+                        <label for="password"></label>
+                        <input type = "password" id = "pswd" value = "" placeholder="New Password">   
+                        <span id = "message" style="color:red">
+
+                        <!-- <input type="text" placeholder="New Password"> -->
+                    </form><br><br>
+                        
+                        <form id="myform2">
+                        <label style="color:rgb(72, 95, 103);">Birthday</label><br><br>
+                        
+                        <select id="birthday" name="birthday" title="Please select something!">
+                            <option>select</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                        </select>
+                        
+                        <select>
+                            <option>Jan</option>
+                            <option>Feb</option>
+                            <option>Mar</option>
+                            <option>Apr</option>
+                            
+                        </select>
+                        <select>
+                            <option>1995</option>
+                            <option>1996</option>
+                            <option>1997</option>
+                            <option>1998</option>
+                            <option>1999</option>
+                            <option>2000</option>
+                        </select>
+                    </form><br><br>
+                        <label style="color:rgb(72, 95, 103);">Gender</label><br><br>
+                        <input type="radio" name="aa">
+                        <label style="color:rgb(12, 14, 15);">Female</label>
+                        <input type="radio" name="aa">
+                        <label style="color:rgb(12, 14, 15);">Male</label>
+                        <input type="radio" name="aa">
+                        <label style="color:rgb(12, 14, 15);">Others</label>
+                        <h6 style="color:rgb(12, 14, 15);">By cicking Sign Up, you agros to cur Terre, Dats Polcy and Gooki: Policy You may rocsive SMS nottications froen us and can opt out any time </h6>
+
+                       <input type="submit" value="signup" id="frs"style="background-color:rgb(56, 107, 56); color:white;">
+                      
+                    </div><div>
+                    
+                    
+                   
+                    </div>
+
+                   
+                
+               
+            
+        
+        
+
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"> </script>  
+<script src="password.js"></script>
+<script src="name.js"></script>
+<script src="dropdown.js"></script>
+<script src="email.js"></script>
+<script src="password2.js"></script>
+<script src="firstname.js"></script>
+
+
+<script>
+// just for the demos, avoids form submit
+jQuery.validator.setDefaults({
+  debug: true,
+  success: "valid"
+});
+$( "#myform" ).validate({
+  rules: {
+    field: {
+      required: true,
+      email: true
+    }
+  }
+});
+</script>
+      
+   
+</body>
+</html>
